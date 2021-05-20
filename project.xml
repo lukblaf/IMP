@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project outputprefix="musicalinstrumentsim">
+
+    <!-- Project description -->
+    <name> Simulation of musical instrument </name>
+    <author>Lukas Tkax</author>
+    <authoremail>xtkacl00@stud.fit.vutbr.cz</authoremail>
+    <revision>20201219</revision>
+    <description> Simulation of musical instrument on MCU MSP430F168 (Texas Instruments) </description>
+
+
+    <!-- MCU part -->
+    <mcu>
+        <include>mcu/libs/keyboard/package.xml</include>
+        <include>mcu/libs/lcd/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga>
+    <include>fpga/ctrls/keyboard/package.xml</include>
+    <include>fpga/ctrls/lcd/package.xml</include>
+    <file>top_level.vhd</file>
+    </fpga>
+
+</project>
